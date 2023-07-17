@@ -1,27 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'aeonik';
+  src: url('../public/assets/Aeonik-Regular.otf');
+  font-weight: 400;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'aeonik';
+  src: url('../public/assets/Aeonik-Bold.otf');
+  font-weight: 700, 800;
 }
-
+@font-face {
+  font-family: 'aeonik';
+  src: url('../public/assets/Aeonik-Light.otf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'aenik';
+  src: url('../public/assets/Aeonik-Medium.otf');
+  font-weight: 500, 600;
+}
+div,
+main,
+section,
+span,
+nav {
+  /* border: 1px solid red; */
+}
+.gradient-primary {
+  background: linear-gradient(90deg, #746bdb 20%, #8359e3 50%, #8a52e7 100%);
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-primary text-secondary font-[aeonik];
+}
+* {
+  @apply transition-all duration-300;
+}
+h1 {
+  @apply leading-normal md:leading-relaxed lg:leading-loose;
 }
