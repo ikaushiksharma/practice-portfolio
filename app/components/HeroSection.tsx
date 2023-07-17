@@ -9,7 +9,7 @@ const HeroSection = (props: Props) => {
     <SectionContainer>
       <div className="w-full h-full flex flex-col sm:flex-row items-start justify-between">
         <div className="flex mt-0 sm:mt-16 w-full sm:w-1/2 flex-col">
-          <div className="w-full sm:w-4/5 space-y-6">
+          <div className="w-full sm:w-4/5 space-y-6 lg:space-y-8 xl:space-y-12 xxl:space-y-16 ">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl xxl:text-7xl font-bold leading-normal md:leading-relaxed lg:leading-[3rem]">
               Get help with <span className="text-tertiary">coding</span> from
               engineers <span className="text-tertiary">.</span>
