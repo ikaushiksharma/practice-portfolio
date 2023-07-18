@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import MobileNav from './MobileNav';
+import Link from 'next/link';
 
 type Props = {};
 const navLinks = ['home', 'about', 'projects', 'testimonials'];
@@ -12,7 +13,7 @@ const Navbar = (props: Props) => {
         <ul className="flex items-center capitalize justify-evenly sm:gap-x-2 md:gap-x-3 lg:gap-x-4 xl:gap-x-6">
           {navLinks.map((link, idx) => (
             <li key={idx} className="hover:text-tertiary cursor-pointer">
-              {link}
+              <Link href={`#${link}`}>{link}</Link>
             </li>
           ))}
         </ul>

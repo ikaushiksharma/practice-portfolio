@@ -25,12 +25,29 @@ div,
 main,
 section,
 span,
+img,
+svg,
 nav {
   /* border: 1px solid red; */
 }
 .gradient-primary {
   background: linear-gradient(90deg, #746bdb 20%, #8359e3 50%, #8a52e7 100%);
 }
+html::-webkit-scrollbar {
+  width: 5px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #825ae2;
+  border-radius: 5rem;
+}
+
 body {
   @apply bg-primary text-secondary font-[aeonik];
 }

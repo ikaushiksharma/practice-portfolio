@@ -1,12 +1,13 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AnimatePresence, motion, useCycle } from 'framer-motion';
 
 const links = [
-  { name: 'Home', to: '#', id: 1 },
-  { name: 'About', to: '#', id: 2 },
-  { name: 'Projects', to: '#', id: 3 },
-  { name: 'Contact', to: '#', id: 4 },
+  { name: 'Home', to: '#home', id: 1 },
+  { name: 'About', to: '#about', id: 2 },
+  { name: 'Projects', to: '#projects', id: 3 },
+  { name: 'Testimonials', to: '#testimonials', id: 4 },
+  { name: 'Contact', to: '#contact', id: 5 },
 ];
 
 const itemVariants = {
@@ -33,9 +34,16 @@ const sideVariants = {
 
 export default function MobileNav() {
   const [open, cycleOpen] = useCycle(false, true);
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [open]);
 
   return (
-    <nav className="flex absolute left-0 z-50 sm:hidden">
+    <nav className="flex fixed left-0 z-50 sm:hidden">
       <AnimatePresence>
         {open && (
           <motion.aside
