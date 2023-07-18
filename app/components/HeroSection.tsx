@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionContainer from './SectionContainer';
-import Button from './Button';
+import GradientButton from './GradientButton';
 
 type Props = {};
 
@@ -19,7 +19,7 @@ const HeroSection = (props: Props) => {
               Consult with best experts to apply skills in action.
             </p>
             <div className="flex items-center gap-x-4">
-              <Button>Start Learning</Button>
+              <GradientButton>Start Learning</GradientButton>
               <h3 className="flex justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

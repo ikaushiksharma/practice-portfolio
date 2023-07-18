@@ -3,6 +3,7 @@ import SectionContainer from './SectionContainer';
 import Tag from './Tag';
 import BulletPoint from './BulletPoint';
 import Image from 'next/image';
+import PlainButton from './PlainButton';
 
 type Props = {};
 
@@ -41,6 +42,57 @@ const AboutSection = (props: Props) => {
         <div className="flex items-center justify-center sm:justify-start w-full my-2 sm:my-16 sm:w-1/2">
           <img
             src="/images/aboutImg.png"
+            className="w-72 sm:w-full lg:w-96 xl:w-[28rem] xxl:w-[30rem]"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="w-full h-full flex px-4 pt-16 sm:pt-4 sm:px-0 flex-col sm:flex-row-reverse justify-between">
+        <div className="flex  gap-y-6 pl-4 lg:pl-0 my-8 sm:my-16 w-full sm:w-1/2 flex-col">
+          <div className="lg:py-4 xxl:py-6">
+            <h2 className="text-4xl lg:text-5xl xxl:text-6xl font-bold">
+              The languages for building web pages
+            </h2>
+          </div>
+          <div>
+            <p className="text-xs lg:text-sm md:tracking-wider md:leading-loose pr-6">
+              Go live on a fast, reliable, and hassle-free hosting network that
+              scales with your business with one click and go code!
+            </p>
+          </div>
+          <div className="flex lg:py-4 xxl:py-6 w-full gap-4 md:gap-6 lg:w-2/3 flex-col">
+            <PlainButton classes="text-tertiary bg-secondary">
+              Try it yourself
+            </PlainButton>
+          </div>
+        </div>
+        <div className="flex items-center relative justify-center sm:justify-start w-full my-2 sm:my-16 sm:w-1/2">
+          <div className="flex absolute justify-end my-auto h-auto w-72 sm:w-full lg:w-96 xl:w-[28rem] xxl:w-[30rem]">
+            <svg
+              className=""
+              width="100"
+              height="100"
+              viewBox="0 0 195 195"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M100.796 18.7209C99.4549 16.4051 96.9817 14.9791 94.3057 14.9791C91.6298 14.9791 89.1565 16.4051 87.8158 18.7209L11.6076 150.353C10.2644 152.673 10.2618 155.534 11.6008 157.856C12.9398 160.179 15.4167 161.61 18.0975 161.61H170.514C173.195 161.61 175.672 160.179 177.011 157.856C178.35 155.534 178.347 152.673 177.004 150.353L100.796 18.7209Z"
+                fill="#825AE2"
+                stroke="#E9E9E9"
+                strokeWidth="14.9983"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M76.6122 69.4454L114.54 69.5135L56.8423 105.434L127.671 104.229L46.6427 137.121L140.622 135.297"
+                stroke="white"
+                strokeWidth="7.49915"
+                strokeLinejoin="bevel"
+              />
+            </svg>
+          </div>
+          <img
+            src="/images/aboutImg2.png"
             className="w-72 sm:w-full lg:w-96 xl:w-[28rem] xxl:w-[30rem]"
             alt=""
           />

@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import GradientButton from './GradientButton';
 import MobileNav from './MobileNav';
 import Link from 'next/link';
 
@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
             </li>
           ))}
         </ul>
-        <Button>Contact</Button>
+        <GradientButton>Contact</GradientButton>
       </nav>
       <MobileNav />
     </>

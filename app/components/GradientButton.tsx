@@ -6,7 +6,7 @@ type Props = {
   onClick?: () => void;
 };
 
-const Button = ({ children, type, onClick }: Props) => {
+export const GradientButton = ({ children, type, onClick }: Props) => {
   return (
     <button
       className="gradient-primary capitalize px-4 py-2"
@@ -18,4 +18,4 @@ const Button = ({ children, type, onClick }: Props) => {
   );
 };
 
-export default Button;
+export default GradientButton;
