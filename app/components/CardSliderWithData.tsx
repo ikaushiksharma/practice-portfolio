@@ -1,6 +1,6 @@
 'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Scrollbar } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { motion } from 'framer-motion';
 import { DiReact } from 'react-icons/di';
 import { BiLogoTypescript, BiLogoNodejs, BiLogoMongodb } from 'react-icons/bi';
@@ -215,6 +215,7 @@ export default function CardSliderWithData() {
       <div className="w-full xs:w-4/5 sm:w-3/5 relative h-4/5 py-1 lg:py-5">
         <Swiper
           className="relative"
+          //@ts-ignore
           modules={[Autoplay, Scrollbar, Navigation]}
           autoplay={{
             delay: 5000,

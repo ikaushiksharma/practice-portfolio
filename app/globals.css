@@ -29,7 +29,7 @@ span,
 img,
 svg,
 nav {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .gradient-primary {
   background: linear-gradient(90deg, #746bdb 20%, #8359e3 50%, #8a52e7 100%);
