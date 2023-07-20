@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-secondary debug-screens">{children}</body>
+      <body className="text-secondary">{children}</body>
     </html>
   );
 }
