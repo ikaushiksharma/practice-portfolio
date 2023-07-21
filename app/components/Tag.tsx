@@ -2,7 +2,7 @@ import React from 'react';
 
 type Props = {
   children: React.ReactNode;
-  id: string;
+  id?: string;
 };
 
 export default function Tag({ children, id }: Props) {
