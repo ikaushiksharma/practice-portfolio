@@ -145,12 +145,10 @@ export default function CardSliderWithData() {
   }, [activeSlide]);
 
   const prevHandler = () => {
-    // console.log('in prevslide');
     swiperRef.slidePrev();
   };
 
   const nextHandler = () => {
-    // console.log('in nextslide');
     swiperRef.slideNext();
   };
 
@@ -221,9 +219,7 @@ export default function CardSliderWithData() {
             delay: 5000,
           }}
           onSlideChange={(swiper) => {
-            console.log(swiper.realIndex);
             setActiveSlide(swiper.realIndex);
-            console.log(activeSlide);
           }}
           onSwiper={(swiper) => {
             setSwiperRef(swiper);

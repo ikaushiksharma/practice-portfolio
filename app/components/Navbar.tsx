@@ -2,6 +2,7 @@ import React from 'react';
 import GradientButton from './GradientButton';
 import MobileNav from './MobileNav';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 
 type Props = {};
 const navLinks = ['home', 'about', 'projects', 'testimonials'];
@@ -20,7 +21,9 @@ const Navbar = (props: Props) => {
             </li>
           ))}
         </ul>
-        <GradientButton>Contact</GradientButton>
+        <GradientButton>
+          <Link href="#contact">Contact</Link>
+        </GradientButton>
       </nav>
       <MobileNav />
     </>

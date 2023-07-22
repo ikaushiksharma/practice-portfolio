@@ -1,24 +1,23 @@
 import React from 'react';
 import SectionContainer from './SectionContainer';
 import Tag from './Tag';
-import PlainButton from './PlainButton';
 import Card from './Card';
 
 const EdSection = () => {
   return (
     <SectionContainer>
       <Tag id="education">Education</Tag>
-      <div className="w-full h-full flex px-4 pt-16 sm:pt-4 sm:px-0 flex-col sm:flex-row justify-between">
-        <div className="flex  gap-y-6 pl-4 lg:pl-0 my-6 sm:my-10 w-full sm:w-2/5 flex-col">
-          <div className="lg:py-3 w-3/5 xxl:py-4">
+      <div className="w-full h-full flex px-4 pt-4 sm:px-0 flex-col sm:flex-row justify-between">
+        <div className="flex gap-y-6 pl-4 lg:pl-0 my-6 sm:my-10 w-full sm:w-2/5 flex-col">
+          <div className="lg:py-3 w-full sm:w-3/5 xxl:py-4">
             <h2 className="text-4xl sm:text-5xl font-extrabold">
               Lorem
               <SVG />
               Lorem, ipsum dolor.
             </h2>
           </div>
-          <div className="w-4/5">
-            <p className="text-xs lg:text-sm md:tracking-wider md:leading-loose pr-6">
+          <div className="w-full sm:w-4/5">
+            <p className="text-xs lg:text-sm tracking-wider md:leading-loose pr-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
               illo asperiores earum, aspernatur minus, aliquam eligendi, magnam
               ad laboriosam esse assumenda voluptatibus aliquid. Laboriosam

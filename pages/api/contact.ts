@@ -8,22 +8,20 @@ export default async function handler(
 ) {
   try {
     let { name, email, message } = req.body;
-
-    let newMessage = await prisma.userquery.create({
+    console.log('in api route', req.body);
+    const newMessage = await prisma.users.create({
       data: {
         email,
         name,
         message,
-        isResolved: false,
       },
-    });
-
-    return res.json({
-      status: true,
-      message: 'Your message has been sent',
     });
   } catch (e: any) {
     console.log('Error in sending your message', e);
     return res.send({ status: false, error: e.message });
   }
+  return res.json({
+    status: true,
+    message: 'Your message has been sent',
+  });
 }

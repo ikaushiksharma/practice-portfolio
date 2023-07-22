@@ -12,7 +12,7 @@ const AboutSection = (props: Props) => {
     <SectionContainer>
       <Tag id="about">About Me!</Tag>
       <div className="w-full h-full flex px-4 sm:px-0 flex-col sm:flex-row-reverse justify-between">
-        <div className="flex  gap-y-6 pl-4 lg:pl-0 my-8 sm:my-16 w-full sm:w-1/2 flex-col">
+        <div className="flex  gap-y-6 sm:pl-4 lg:pl-0 my-8 sm:my-16 w-full sm:w-1/2 flex-col">
           <div className="lg:py-4 xxl:py-6">
             <h2 className="text-4xl lg:text-5xl xxl:text-6xl font-bold">
               Making Students Creative
@@ -47,7 +47,7 @@ const AboutSection = (props: Props) => {
           />
         </div>
       </div>
-      <div className="w-full h-full flex px-4 pt-16 sm:pt-4 sm:px-0 flex-col sm:flex-row-reverse justify-between">
+      <div className="w-full h-full flex pr-4 pt-16 sm:pt-4 sm:px-0 flex-col sm:flex-row-reverse justify-between">
         <div className="flex  gap-y-6 pl-4 lg:pl-0 my-8 sm:my-16 w-full sm:w-1/2 flex-col">
           <div className="lg:py-4 xxl:py-6">
             <h2 className="text-4xl lg:text-5xl xxl:text-6xl font-bold">
